@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       button.action = #selector(AppDelegate.togglePopover(_:))
     }
     
-    hotKey = HotKey(keyCombo: KeyCombo(key: .l, modifiers: [.command, .option]))
+    hotKey = HotKey(keyCombo: KeyCombo(key: .y, modifiers: [.command, .option]))
     
     startApp()
     

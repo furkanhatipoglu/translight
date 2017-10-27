@@ -34,12 +34,12 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let languages = Languages().lanDict
-  
-    currentLanguageButton.addItems(withTitles: Array(languages.keys))
+    let languages = Array(Languages().lanDict.keys).sorted() // get keys and sort
+    
+    currentLanguageButton.addItems(withTitles: languages)
     currentLanguageButton.selectItem(withTitle: "English")
     
-    targetLanguageButton.addItems(withTitles: Array(languages.keys))
+    targetLanguageButton.addItems(withTitles: languages)
     targetLanguageButton.selectItem(withTitle: "Turkish")
     
     noteTextField.delegate = self
@@ -54,7 +54,6 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
   }
   
   override func viewDidAppear() {
-//    noteTextField.stringValue = ""
     checkUpdates()
   }
 
