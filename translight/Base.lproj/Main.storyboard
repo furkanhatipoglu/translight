@@ -760,7 +760,7 @@
                                 </scroller>
                             </scrollView>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jC3-gA-2w2">
-                                <rect key="frame" x="231" y="187" width="203" height="26"/>
+                                <rect key="frame" x="266" y="187" width="167" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="kye-Zh-Aya">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -772,7 +772,7 @@
                                 </connections>
                             </popUpButton>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3B-Og-QLN">
-                                <rect key="frame" x="17" y="187" width="211" height="26"/>
+                                <rect key="frame" x="17" y="187" width="169" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="hGj-dv-luY">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -783,11 +783,23 @@
                                     <action selector="currentLanguageButtonPressed:" target="iwo-M9-wDL" id="TTH-50-yRm"/>
                                 </connections>
                             </popUpButton>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-cH-9gy">
+                                <rect key="frame" x="185" y="183" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="exchange" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1wd-gr-AgD">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="languageExchangeButtonPressed:" target="iwo-M9-wDL" id="RvY-1r-OAi"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="1BW-ka-Lzy" id="W7E-Ng-D6I"/>
                         <outlet property="currentLanguageButton" destination="x3B-Og-QLN" id="j5d-oy-5EG"/>
+                        <outlet property="languageExchangeButton" destination="tmb-cH-9gy" id="wGl-Q3-OiV"/>
                         <outlet property="noteTextField" destination="XLU-yQ-qrt" id="G2e-Cl-lX4"/>
                         <outlet property="resultTextField" destination="9xQ-n8-s6Y" id="bgN-8c-zQR"/>
                         <outlet property="targetLanguageButton" destination="jC3-gA-2w2" id="RcT-Pp-Db2"/>
@@ -799,4 +811,7 @@
             <point key="canvasLocation" x="782" y="244"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="exchange" width="102.40000152587891" height="102.40000152587891"/>
+    </resources>
 </document>

@@ -13,6 +13,7 @@
 		470B57AA1F7C5084005BF5DA /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B57A51F7C5084005BF5DA /* NSEventModifierFlags+HotKey.swift */; };
 		470B57AB1F7C5084005BF5DA /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B57A61F7C5084005BF5DA /* KeyCombo.swift */; };
 		474F53FA1F8987260013F607 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F53F91F8987260013F607 /* CustomButton.swift */; };
+		4767E8B21FA3F4DF00FF3E6C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767E8B11FA3F4DF00FF3E6C /* Extensions.swift */; };
 		476DB4121F9013E1003060D7 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DB4111F9013E1003060D7 /* ROGoogleTranslate.swift */; };
 		479523BB1F8FFBF700513FF4 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479523BA1F8FFBF700513FF4 /* Languages.swift */; };
 		479973BD1F8FF76B007F3E5B /* GoogleApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479973BC1F8FF76B007F3E5B /* GoogleApiKey.swift */; };
@@ -33,6 +34,7 @@
 		470B57A51F7C5084005BF5DA /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
 		470B57A61F7C5084005BF5DA /* KeyCombo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCombo.swift; sourceTree = "<group>"; };
 		474F53F91F8987260013F607 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4767E8B11FA3F4DF00FF3E6C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		476DB4111F9013E1003060D7 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
 		479523BA1F8FFBF700513FF4 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		479973BC1F8FF76B007F3E5B /* GoogleApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleApiKey.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				479973BC1F8FF76B007F3E5B /* GoogleApiKey.swift */,
 				479523BA1F8FFBF700513FF4 /* Languages.swift */,
 				474F53F91F8987260013F607 /* CustomButton.swift */,
+				4767E8B11FA3F4DF00FF3E6C /* Extensions.swift */,
 				AD988B871F1D23CB002C6B61 /* Assets.xcassets */,
 				AD988B891F1D23CB002C6B61 /* Main.storyboard */,
 			);
@@ -193,6 +196,7 @@
 				476DB4121F9013E1003060D7 /* ROGoogleTranslate.swift in Sources */,
 				474F53FA1F8987260013F607 /* CustomButton.swift in Sources */,
 				AD988B9C1F20DA37002C6B61 /* EventMonitor.swift in Sources */,
+				4767E8B21FA3F4DF00FF3E6C /* Extensions.swift in Sources */,
 				479973BD1F8FF76B007F3E5B /* GoogleApiKey.swift in Sources */,
 				470B57A71F7C5084005BF5DA /* HotKey.swift in Sources */,
 				470B57A91F7C5084005BF5DA /* Key.swift in Sources */,

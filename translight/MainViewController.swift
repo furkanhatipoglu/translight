@@ -19,6 +19,7 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
     @IBOutlet var resultTextField: NSTextView!
     @IBOutlet weak var currentLanguageButton: NSPopUpButton!
     @IBOutlet weak var targetLanguageButton: NSPopUpButton!
+    @IBOutlet weak var languageExchangeButton: NSButton!
     
   
     let updateAvailableText = "New update is available!"
@@ -112,7 +113,18 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
       targetLanguageValue = Languages().lanDict[(sender.selectedItem?.title ?? "tr")] ?? "tr"
     }
     
+    @IBAction func languageExchangeButtonPressed(_ sender: NSButton) {
+      let currentLanguageHolder = currentLanguageValue
+      currentLanguageValue = targetLanguageValue
+      targetLanguageValue = currentLanguageHolder
+      
+      let language = Languages()
 
+      currentLanguageButton.selectItem(withTitle: language.lanDict.allKeys(forValue: currentLanguageValue).first!)
+      targetLanguageButton.selectItem(withTitle: language.lanDict.allKeys(forValue: targetLanguageValue).first!)
+      
+    }
+    
     func translate (text: String) {
     
     setActivityIndicatorStartAnimation()
