@@ -44,7 +44,7 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
     
     noteTextField.delegate = self
     activityIndicator.isDisplayedWhenStopped = false
-  
+    
     setButtonTitle(text: aboutText)
   }
   
@@ -60,7 +60,10 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
   func setButtonTitle (text: String) {
     let pstyle = NSMutableParagraphStyle()
     pstyle.alignment = .left
-    updateButton.attributedTitle = NSAttributedString(string: text, attributes: [ NSAttributedStringKey.foregroundColor: NSColor.gray, NSAttributedStringKey.paragraphStyle: pstyle])
+    let buttonColor = NSColor(red: 195/255, green: 195/255, blue: 195/255, alpha: 1.0)
+    updateButton.attributedTitle = NSAttributedString(string: text, attributes: [ NSAttributedStringKey.foregroundColor: buttonColor,
+                                                                                  NSAttributedStringKey.paragraphStyle: pstyle,
+                                                                                  NSAttributedStringKey.font: NSFont.boldSystemFont(ofSize: 12)])
   }
   
   func checkUpdates () {
@@ -214,7 +217,6 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
   }
   
   func setDownloadingProperties () {
-
     buttonStatus = .downloading
     setButtonTitle(text: "Downloading")
     setActivityIndicatorStartAnimation()
@@ -222,18 +224,16 @@ class MainViewController: NSViewController, NSTableViewDelegate, NSTableViewData
   
   func setActivityIndicatorStartAnimation () {
     activityIndicator.startAnimation(self)
-    updateButton.frame = NSRect(x: updateButton.frame.minX + 20, y: updateButton.frame.minY, width: updateButton.bounds.width, height: updateButton.bounds.height)
   }
   
   func setNotDownladingProperties () {
-    self.buttonStatus = .about
-    self.setButtonTitle(text: "About")
-    self.setActivityIndicatorStopAnimation()
+    buttonStatus = .about
+    setButtonTitle(text: "About")
+    setActivityIndicatorStopAnimation()
   }
   
   func setActivityIndicatorStopAnimation () {
     self.activityIndicator.stopAnimation(self)
-    self.updateButton.frame = NSRect(x: self.updateButton.frame.minX - 20, y: self.updateButton.frame.minY, width: self.updateButton.bounds.width, height: self.updateButton.bounds.height)
   }
   
   func createAlertView(question: String, text: String) -> Bool {

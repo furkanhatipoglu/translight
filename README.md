@@ -4,26 +4,23 @@
 
 # Translight
 
-Simplest translate app for OS X.
-
-## What is it?
-
-Translight is a simple translate menu bar app which uses Google Translate Api.
-The idea came from [Burak Karakan](https://github.com/karakanb) and I wrote the app.
+The simplest translation app for macOS. It uses Google Translate API, and translates the given text directly.
+It is made to be a simple alternative to Google Translate, eliminating the need to open browser for a simple translation. It uses the same API, which means it works the same with Google Translate.
 
 ## Installing
 
-[Download](http://web.itu.edu.tr/hatipoglufu/translight/translight.zip) the translight application, unzip, move to Applications folder that is it.
+- [Download](http://web.itu.edu.tr/hatipoglufu/translight/translight.zip) the translight application,
+- Unzip it.
+- Move to Applications folder that is it.
 
 ## How to use it?
 
-Type ⌘ + ⌥ + L to open quickly or click the icon on the menu bar.
+Type ⌘ + ⌥ + Y to open quickly or click the icon on the menu bar.
 
 ## To-Do
 
-- Language detection
-- Sorting languages
-
+- [ ] Language detection
+- [x] Sorting languages
 
 
 ## Built With
