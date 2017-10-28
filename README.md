@@ -29,4 +29,4 @@ Type ⌘ + ⌥ + Y to open quickly or click the icon on the menu bar.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. License file will be added.
