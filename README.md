@@ -4,7 +4,7 @@
 
 # Translight
 
-Simplest translate app for OS X.
+The simplest translate app for OS X.
 
 ## What is it?
 
