@@ -21,8 +21,8 @@ Type ⌘ + ⌥ + L to open quickly or click the icon on the menu bar.
 
 ## To-Do
 
-- Language detection
-- Sorting languages
+- [ ] Language detection
+- [x] Sorting languages
 
 
 
